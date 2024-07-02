@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold">About Us</h2>
           <p className="mt-4 text-lg md:text-xl text-gray-600">
-            Skill Bazaar is your go-to platform for finding and offering freelance services. 
+            Lancer unit is your go-to platform for finding and offering freelance services. 
             Whether you're a freelancer looking to offer your skills or a business seeking 
             top-notch freelance talent, we provide a seamless and efficient experience.
           </p>
@@ -17,7 +17,7 @@ const AboutSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold">Our Features</h2>
           <p className="mt-4 text-lg md:text-xl text-gray-600 mb-8">
-            Discover what sets Skill Bazaar apart from other freelancing platforms.
+            Discover what sets Lancer unit apart from other freelancing platforms.
           </p>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
