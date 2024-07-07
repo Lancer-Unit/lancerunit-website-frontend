@@ -32,10 +32,10 @@ const Navbar: React.FC = () => {
         </div>
         <div className="flex space-x-4">
           <Link href="/signup" passHref>
-            <div className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200 cursor-pointer">Signup</div>
+            <div className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-950 transition-colors duration-200 cursor-pointer">Signup</div>
           </Link>
           <Link href="/login" passHref>
-            <div className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition-colors duration-200 cursor-pointer">Login</div>
+            <div className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-950 transition-colors duration-200 cursor-pointer">Login</div>
           </Link>
         </div>
       </div>

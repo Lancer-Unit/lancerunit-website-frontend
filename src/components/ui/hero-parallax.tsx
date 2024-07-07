@@ -104,7 +104,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto px-4 w-full left-0 top-0">
+    <div id="home" className="max-w-7xl relative mx-auto px-4 w-full left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-black">
         The Ultimate <br /> Freelancing Solution
       </h1>
