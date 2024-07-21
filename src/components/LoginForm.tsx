@@ -11,7 +11,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 
 // Import Swiper modules from 'swiper/modules'
-export function SignupForm() {
+export function LoginForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
@@ -23,22 +23,12 @@ export function SignupForm() {
         {/* Signup Form */}
         <div className="w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 ">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Join the millions Earning through LancerUnit
+            Into the World of Freelancing
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mb-8 text-center">
-            Build skills for today, tomorrow, and beyond..
+            Use your skills for better today, tomorrow, and beyond..
           </p>
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="flex flex-col">
-                <label htmlFor="firstname" className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">First name</label>
-                <input id="firstname" placeholder="Tyler" type="text" className="p-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-purple-400" />
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="lastname" className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Last name</label>
-                <input id="lastname" placeholder="Durden" type="text" className="p-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-purple-400" />
-              </div>
-            </div>
             <div className="flex flex-col mb-6">
               <label htmlFor="email" className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
               <input id="email" placeholder="abc@gmail.com" type="email" className="p-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-purple-400" />
@@ -47,15 +37,10 @@ export function SignupForm() {
               <label htmlFor="password" className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Password</label>
               <input id="password" placeholder="••••••••" type="password" className="p-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-purple-400" />
             </div>
-            <div className="flex flex-col mb-6">
-              <label htmlFor="cnfpassword" className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Confirm Your Password</label>
-              <input id="cnfpassword" placeholder="••••••••" type="password" className="p-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-purple-400" />
-            </div>
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-md shadow-md hover:from-purple-600 hover:to-indigo-600 transition duration-200"
-            >
-              Register &rarr;
+              className="w-full py-2 px-4 bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-md shadow-md hover:from-teal-600 hover:to-teal-700 transition duration-200">
+              Log In &rarr;
             </button>
           </form>
         </div>

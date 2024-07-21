@@ -53,9 +53,8 @@ export function SignupForm() {
             </div>
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-md shadow-md hover:from-purple-600 hover:to-indigo-600 transition duration-200"
-            >
-              Register &rarr;
+              className="w-full py-2 px-4 bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-md shadow-md hover:from-teal-600 hover:to-teal-700 transition duration-200">
+              Log In &rarr;
             </button>
           </form>
         </div>
