@@ -1,13 +1,6 @@
-// components/HeroParallaxDemo.tsx
-"use client";
-import React from "react";
-import { HeroParallax } from "../ui/hero-parallax";
+import { HeroParallax as HeroParallaxUI } from "../ui/hero-parallax";
 
-export function HeroParallaxDemo() {
-  return <HeroParallax products={products} />;
-}
-
-export const products = [
+const products = [
   {
     title: "Moonbeam",
     link: "",
@@ -99,3 +92,7 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },
 ];
+
+export default function HeroParallax() {
+  return <HeroParallaxUI products={products} />;
+}

@@ -1,6 +1,3 @@
-// src/components/TeamCard.tsx
-import React from 'react';
-
 interface TeamCardProps {
   name: string;
   role: string;
@@ -8,7 +5,12 @@ interface TeamCardProps {
   socials: { href: string; icon: string }[];
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({ name, role, image, socials }) => {
+export default function TeamCard({
+  name,
+  role,
+  image,
+  socials,
+}: TeamCardProps) {
   return (
     <div className="team-card p-6 rounded-lg shadow-lg bg-glass transform transition-transform hover:scale-105 hover:shadow-teal-500/50">
       <div className="relative mb-4">
@@ -23,7 +25,13 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, role, image, socials }) => {
       <ul className="social flex justify-center mt-4">
         {socials.map((social, index) => (
           <li key={index} className="mx-2">
-            <a href={social.href} className={social.icon + " text-2xl text-teal-500 hover:text-white transition-colors"}>
+            <a
+              href={social.href}
+              className={
+                social.icon +
+                " text-2xl text-teal-500 hover:text-white transition-colors"
+              }
+            >
               <span className="sr-only">{social.icon}</span>
             </a>
           </li>
@@ -31,6 +39,4 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, role, image, socials }) => {
       </ul>
     </div>
   );
-};
-
-export default TeamCard;
+}

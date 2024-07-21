@@ -2,9 +2,9 @@
 import React from 'react';
 import FeatureCard from './FeatureCard';
 import { FaBriefcase, FaUserCheck, FaLock, FaLifeRing } from 'react-icons/fa';
-import '../../Styles/feature.css';
+import './Feature.css';
 
-const FeaturesSection: React.FC = () => {
+export default function Feature(){
   const features = [
     {
       icon: FaBriefcase,
@@ -67,5 +67,3 @@ const FeaturesSection: React.FC = () => {
     </section>
   );
 };
-
-export default FeaturesSection;
