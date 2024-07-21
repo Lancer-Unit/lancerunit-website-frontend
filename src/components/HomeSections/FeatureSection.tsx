@@ -29,7 +29,7 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section id='Features-arc' id='feature' className="w-full bg-gray-100 py-16">
+    <section id='feature' className="w-full bg-gray-100 py-16">
       <div className="text-center mb-12">
         <p
           data-aos='fade-left'

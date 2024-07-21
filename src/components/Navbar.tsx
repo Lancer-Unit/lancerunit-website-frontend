@@ -12,32 +12,49 @@ const Navbar: React.FC = () => {
         </div>
         <div className="flex space-x-6">
           <Link href="/" passHref>
-            <div className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer">Home</div>
+            <div className="text-gray-700 font-semibold hover:text-blue-700 transition-colors duration-200 cursor-pointer">
+              Home
+            </div>
           </Link>
           <Link href="#about" passHref>
-            <div className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer">About</div>
+            <div className="text-gray-700 font-semibold hover:text-blue-700 transition-colors duration-200 cursor-pointer">
+              About
+            </div>
           </Link>
           <Link href="#findJobs" passHref>
-            <div className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer">Find Jobs</div>
+            <div className="text-gray-700 font-semibold hover:text-blue-700 transition-colors duration-200 cursor-pointer">
+              Find Jobs
+            </div>
           </Link>
           <Link href="#feature" passHref>
-            <div className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer">Features</div>
+            <div className="text-gray-700 font-semibold hover:text-blue-700 transition-colors duration-200 cursor-pointer">
+              Features
+            </div>
           </Link>
           <Link href="#team" passHref>
-            <div className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer">Team</div>
+            <div className="text-gray-700 font-semibold hover:text-blue-700 transition-colors duration-200 cursor-pointer">
+              Team
+            </div>
           </Link>
           <Link href="#contact" passHref>
-            <div className="text-gray-700 hover:text-blue-600 transition-colors duration-200 cursor-pointer">Contact</div>
+            <div className="text-gray-700 font-semibold hover:text-blue-700 transition-colors duration-200 cursor-pointer">
+              Contact
+            </div>
           </Link>
         </div>
         <div className="flex space-x-4">
           <Link href="/signup" passHref>
-            <div className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-950 transition-colors duration-200 cursor-pointer">Signup</div>
+            <div className="px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200 cursor-pointer">
+              Signup
+            </div>
           </Link>
           <Link href="/login" passHref>
-            <div className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-950 transition-colors duration-200 cursor-pointer">Login</div>
+            <div className="px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200 cursor-pointer">
+              Login
+            </div>
           </Link>
         </div>
+
       </div>
     </nav>
   );

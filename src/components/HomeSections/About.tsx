@@ -1,5 +1,6 @@
 import React from 'react';
-import yourImage from '../../assets/frame.png';
+import Image from 'next/image';
+import yourImage from '../../assets/Logo.png';
 
 const AboutSection = () => {
   return (
@@ -37,13 +38,12 @@ const AboutSection = () => {
             </button>
           </div>
         </div>
-        <div className="lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
-          <img loading="lazy"
-            data-aos="fade-down-left"
-            data-aos-offset="400"
-            data-aos-duration="4000"
-            data-aos-easing="ease-out"
-            className="w-full max-w-md rounded-lg shadow-lg" src={yourImage} alt="Lancer.Unit" />
+        <div className="w-full max-w-md">
+          <Image
+            src={yourImage}
+            alt="Lancer.Unit"
+            className="rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>
