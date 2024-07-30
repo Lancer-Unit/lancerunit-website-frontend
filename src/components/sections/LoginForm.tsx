@@ -47,7 +47,7 @@ export default function LoginForm() {
             href="/register"
             className="text-sm text-blue-500 hover:text-blue-600 transition duration-200"
           >
-            Don't have an account? Register
+            Do not have an account? Register
           </Link>
           <Link
             href="/"
