@@ -1,8 +1,10 @@
+import { Icon } from "next/dist/lib/metadata/types/metadata-types";
+
 interface TeamCardProps {
   name: string;
   role: string;
   image: string;
-  socials: { href: string; icon: string }[];
+  socials: { href: string; icon: React.ReactNode }[];
 }
 
 export default function TeamCard({
