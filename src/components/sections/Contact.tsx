@@ -143,7 +143,7 @@ export default function ContactUs() {
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="w-full py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-md shadow-md hover-bg-gradient transition duration-200"
+                    className="w-full py-2 px-4 bg-gradient text-white rounded-md shadow-md hover:scale-110 transition duration-300"
                   >
                     Submit
                   </button>
