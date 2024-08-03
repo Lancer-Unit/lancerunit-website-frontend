@@ -10,3 +10,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+.hover-bg-gradient:hover {
+  background: linear-gradient(135deg, #61A4FA, #936CF8);
+}
+
+.hover-text-gradient {
+  color: linear-gradient(135deg, #61A4FA, #936CF8);
+}

@@ -16,11 +16,14 @@ const teamMembers = [
         href: "https://www.instagram.com/lancer1_1776/",
         icon: <FaInstagram />,
       },
-      { href: "https://linkedin.com", icon: <FaLinkedin /> },
+      {
+        href: "https://www.linkedin.com/in/rohit-kansal-870527255/",
+        icon: <FaLinkedin />,
+      },
     ],
   },
   {
-    name: "Utkarsh Yadav",
+    name: "Maheen Sheikh",
     role: "Full Stack Developer",
     image:
       "https://cdn.pixabay.com/photo/2024/02/12/17/23/ai-generated-8569065_1280.jpg",
@@ -35,7 +38,7 @@ const teamMembers = [
     ],
   },
   {
-    name: "Ajay Goswami",
+    name: "Utkarsh Yadav",
     role: "Full Stack Developer",
     image:
       "https://imgcdn.stablediffusionweb.com/2024/5/4/685071ad-bd76-43fd-a055-ba4f3defa04a.jpg",
@@ -46,7 +49,10 @@ const teamMembers = [
         href: "https://www.instagram.com/lancer1_1776/",
         icon: <FaInstagram />,
       },
-      { href: "https://linkedin.com", icon: <FaLinkedin /> },
+      {
+        href: "https://www.linkedin.com/in/utkarsh-yadav-835859230/",
+        icon: <FaLinkedin />,
+      },
     ],
   },
 ];

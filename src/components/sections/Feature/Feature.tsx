@@ -1,4 +1,3 @@
-// src/components/FeaturesSection.tsx
 import React from "react";
 import FeatureCard from "./FeatureCard";
 import { FaBriefcase, FaUserCheck, FaLock, FaLifeRing } from "react-icons/fa";
@@ -8,41 +7,68 @@ export default function Feature() {
   const features = [
     {
       icon: FaBriefcase,
-      title: "Post a Job",
+      title: "Job Support",
       description:
-        "A job posting is defined as an official advertisement created by the employer, human resources, or a recruiter to alert existing employees or job seekers regarding a job opening within the company.",
+        "Struggling with your current role? Our expert team offers personalized job support to help you navigate through challenges and excel in your career. We provide guidance, mentorship, and hands-on assistance to ensure you succeed in your IT role.",
     },
     {
       icon: FaUserCheck,
-      title: "Choose Freelancers",
+      title: "Node Development",
       description:
-        "No job is too big or too small. We have freelancers for jobs of any size or budget with extraordinary skills. No job is complex. We can get it done!",
+        "Harness the power of Node.js with our robust development services. Our developers create high-performance, scalable, and efficient backend solutions that drive your business forward. From API development to real-time applications, we have you covered.",
     },
     {
       icon: FaLock,
-      title: "Pay Securely",
+      title: "Dotnet Development",
       description:
-        "One pays for work when it has been completed and you're 100% satisfied with the quality using our milestone payment system.",
+        "Leverage the versatility and reliability of .NET with our specialized development services. Our team delivers enterprise-grade applications that are secure, scalable, and robust. We cover everything from web applications to complex business solutions.",
     },
     {
       icon: FaLifeRing,
-      title: "We're here to help",
+      title: "React Development",
       description:
-        "Our talented team of recruiters can help you find the best freelancer for the job, and our technical co-pilots can even manage the project for you.",
+        "Stay ahead of the curve with our React development expertise. Our team builds dynamic, responsive, and high-performing web applications using the latest React frameworks and tools. We focus on creating intuitive user interfaces that enhance user experience.",
+    },
+    {
+      icon: FaLifeRing,
+      title: "Angular Development",
+      description:
+        "Transform your ideas into reality with our Angular development services. We develop feature-rich, dynamic web applications that are both powerful and scalable. Our developers are proficient in creating seamless, high-quality Angular solutions tailored to your business needs.",
+    },
+    {
+      icon: FaLifeRing,
+      title: "Golang Development",
+      description:
+        "Experience the efficiency and performance of Golang with our specialized development services. Our team builds robust, scalable, and efficient applications using Go, ensuring optimal performance and reliability for your business needs.",
+    },
+    {
+      icon: FaLifeRing,
+      title: "Python Development",
+      description:
+        "Unlock the potential of Python with our comprehensive development services. Whether it's web development, data analysis, or machine learning, our team leverages Python's versatility to create innovative and effective solutions tailored to your requirements.",
+    },
+    {
+      icon: FaLifeRing,
+      title: "Java Development",
+      description:
+        "Utilize the power of Java with our expert development services. Our team develops secure, high-performance, and scalable applications for a variety of business needs. From enterprise applications to mobile solutions, we deliver robust Java solutions that meet your demands.",
     },
   ];
 
   return (
-    <section id="feature" className="w-full lg:h-screen flex flex-col justify-center py-24">
-      <div className="text-center mb-12">
+    <section
+      id="feature"
+      className="w-full lg:h-min-screen flex flex-col justify-center py-24"
+    >
+      <div className="text-center mb-12 ">
         <p
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-easing="ease-out"
           data-aos-duration="4000"
-          className="text-4xl font-bold"
+          className="text-4xl font-bold "
         >
-          Lancer.Unit's Specialty
+          Our Services
         </p>
       </div>
       <div
@@ -50,7 +76,7 @@ export default function Feature() {
         data-aos-offset="150"
         data-aos-easing="ease-out"
         data-aos-duration="4000"
-        className="h-1 bg-gradient-to-r from-teal-500 to-teal-500 w-16 mx-auto mb-12"
+        className="h-1 bg-gradient-to-r from-blue-500 to-blue-500 w-16 mx-auto mb-12"
       ></div>
       <div
         data-aos="fade-right"

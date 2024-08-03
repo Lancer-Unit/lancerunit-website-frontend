@@ -31,7 +31,7 @@ export const TextArea: React.FC<InputProps> = ({
     <textarea
       id={id}
       placeholder={placeholder}
-      className="p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-600"
+      className="p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600"
       required={required}
       rows={rows}
       name={name}
