@@ -3,11 +3,11 @@ import yourImage from "../../assets/Logo.png";
 
 export default function AboutSection() {
   return (
-    <section id="Website-des" className="relative py-16">
-      <div
-        id="about"
-        className="glass flex flex-col lg:flex-row items-center lg:items-start lg:justify-around mx-6 lg:mx-12 py-16 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg p-8 rounded-2xl shadow-lg"
-      >
+    <section
+      id="about"
+      className="w-full lg:h-screen flex flex-col justify-center items-center bg-gray-100 py-24"
+    >
+      <div className="glass flex flex-col lg:flex-row items-center lg:items-start lg:justify-around mx-6 lg:mx-12 py-16 bg-white backdrop-filter backdrop-blur-lg p-8 rounded-2xl shadow-lg">
         <div className="w-full max-w-md">
           <Image
             src={yourImage}
@@ -29,7 +29,7 @@ export default function AboutSection() {
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-duration="4000"
-            className="h-1 bg-gradient-to-r from-teal-500 to-blue-500 w-16 mb-6"
+            className="h-1 bg-gradient-to-r from-teal-500 to-teal-500 w-16 mb-6"
           ></div>
           <div
             data-aos="fade-right"
@@ -52,7 +52,7 @@ export default function AboutSection() {
               data-aos-offset="100"
               data-aos-duration="4000"
               data-aos-easing="ease-out"
-              className="bg-gradient-to-r from-teal-500 to-blue-500 text-white py-2 px-4 rounded-full transition-transform transform hover:scale-105"
+              className="bg-gradient-to-r from-teal-500 to-teal-500 text-white py-2 px-4 rounded-full transition-transform transform hover:scale-105"
             >
               See More
             </button>

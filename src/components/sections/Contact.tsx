@@ -25,7 +25,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section id="contact" className="w-full bg-gray-100 py-16">
+    <section id="contact" className="w-full py-16">
       <div className="text-center mb-12">
         <p
           data-aos="fade-left"
@@ -42,7 +42,7 @@ export default function ContactUs() {
         data-aos-offset="150"
         data-aos-easing="ease-out"
         data-aos-duration="4000"
-        className="h-1 bg-gradient-to-r from-teal-500 to-blue-500 w-16 mx-auto mb-12"
+        className="h-1 bg-gradient-to-r from-teal-500 to-teal-500 w-16 mx-auto mb-12"
       ></div>
       <div
         data-aos="fade-right"
@@ -78,7 +78,7 @@ export default function ContactUs() {
             <div className="text-center">
               <button
                 type="submit"
-                className="w-full py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-md shadow-md hover:from-teal-600 hover:to-teal-700 transition duration-200"
+                className="w-full py-2 px-4 bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-md shadow-md hover:from-teal-600 hover:to-teal-700 transition duration-200"
               >
                 Submit
               </button>

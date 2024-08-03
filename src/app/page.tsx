@@ -2,7 +2,7 @@ import AboutSection from '@/components/sections/About';
 import ContactUs from '@/components/sections/Contact';
 import Feature from '@/components/sections/Feature/Feature';
 import Footer from '@/components/sections/Footer';
-import HeroParallax from '@/components/sections/HeroParallax';
+import HeroParallax from '@/components/sections/Home';
 import Navbar from '@/components/sections/Navbar';
 import Team from '@/components/sections/Team/Team';
 import './globals.css';

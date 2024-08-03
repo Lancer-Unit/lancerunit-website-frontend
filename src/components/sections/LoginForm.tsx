@@ -37,7 +37,7 @@ export default function LoginForm() {
           />
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-200"
+            className="w-full py-2 px-4 bg-teal-500 text-white rounded-lg font-semibold hover:bg-teal-600 transition-colors duration-200"
           >
             Login &rarr;
           </button>
@@ -45,13 +45,13 @@ export default function LoginForm() {
         <div className="flex justify-between items-center mt-6">
           <Link
             href="/register"
-            className="text-sm text-blue-500 hover:text-blue-600 transition duration-200"
+            className="text-sm text-teal-500 hover:text-teal-600 transition duration-200"
           >
             Don't have an account? Register
           </Link>
           <Link
             href="/"
-            className="text-sm text-blue-500 hover:text-blue-600 transition duration-200"
+            className="text-sm text-teal-500 hover:text-teal-600 transition duration-200"
           >
             Home
           </Link>
