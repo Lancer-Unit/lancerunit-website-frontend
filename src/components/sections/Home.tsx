@@ -4,27 +4,34 @@ import banner from "../../assets/laptop-2665794.jpg";
 export default function HeroParallax() {
   return (
     <div
-      className="h-screen flex flex-col md:flex-row items-center justify-around w-full overflow-hidden px-8"
+      className="lg:h-screen flex flex-col md:flex-row items-center justify-between w-full overflow-hidden px-8 bg-gradient-to-r"
       id="home"
     >
-      <div className="md:w-1/2">
+      <div className="relative md:w-1/2 flex-shrink-0">
         <Image
           src={banner}
-          alt="home page"
+          alt="Home Page"
           layout="responsive"
-          width={500}
-          height={400}
+          width={1000}
+          height={800}
         />
       </div>
-      <div className="flex flex-col justify-center items-start md:w-1/2 lg:ml-10">
-        <h1 className="text-2xl md:text-8xl font-bold dark:text-black bg-opacity-50 p-2 rounded-md">
-          The Ultimate <br /> Freelancing Solution
+      <div className="flex flex-col justify-center items-start md:w-1/2 lg:ml-10 p-6 md:p-12 bg-opacity-70 rounded-lg">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          Elevate Your Business with <br /> Lancer.unit
         </h1>
-        <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-black bg-opacity-50 p-2 rounded-md">
-          We provide freelancers an opportunity to grow and earn some bucks at
-          the same time. We are a team of passionate developers and designers
-          that love to build amazing products.
+        <p className="text-lg md:text-2xl leading-relaxed mb-6">
+          At Lancer.unit, we are committed to empowering your business with
+          cutting-edge IT solutions and expert support. Our dedicated team of
+          professionals delivers bespoke services across a range of technologies
+          to help you achieve your goals with confidence.
         </p>
+        <a
+          href="#contact"
+          className="inline-block px-6 py-3 bg-blue-500 text-white font-semibold text-lg rounded-lg shadow-lg hover:bg-blue-600 transition duration-300"
+        >
+          Get in Touch
+        </a>
       </div>
     </div>
   );

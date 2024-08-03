@@ -1,5 +1,3 @@
-import { Icon } from "next/dist/lib/metadata/types/metadata-types";
-
 interface TeamCardProps {
   name: string;
   role: string;
@@ -14,7 +12,7 @@ export default function TeamCard({
   socials,
 }: TeamCardProps) {
   return (
-    <div className="team-card p-6 rounded-lg shadow-lg bg-glass transform transition-transform hover:scale-105 hover:shadow-teal-500/50">
+    <div className="team-card p-6 rounded-lg shadow-lg bg-glass transform transition-transform hover:scale-105 hover:shadow-blue-500/50">
       <div className="relative mb-4">
         <div className="img w-40 h-40 rounded-full overflow-hidden mx-auto">
           <img src={image} alt={name} className="w-full h-full object-cover" />
@@ -26,11 +24,11 @@ export default function TeamCard({
       </div>
       <ul className="social flex justify-center mt-4">
         {socials.map((social, index) => (
-          <li key={index} className=" mx-2">
+          <li key={index} className="mx-2">
             <a
               href={social.href}
               className={
-                " text-2xl text-teal-500 hover:text-white transition-colors"
+                "text-2xl text-blue-500 transition-transform transform hover:text-blue-700"
               }
             >
               {social.icon}
