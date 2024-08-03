@@ -1,6 +1,3 @@
-// src/components/TeamCard.tsx
-import React from 'react';
-
 interface TeamCardProps {
   name: string;
   role: string;
@@ -8,11 +5,16 @@ interface TeamCardProps {
   socials: { href: string; icon: string }[];
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({ name, role, image, socials }) => {
+export default function TeamCard({
+  name,
+  role,
+  image,
+  socials,
+}: TeamCardProps) {
   return (
     <div className="team-card p-6 rounded-lg shadow-lg bg-glass transform transition-transform hover:scale-105 hover:shadow-teal-500/50">
       <div className="relative mb-4">
-        <div className="img w-32 h-32 rounded-full overflow-hidden mx-auto">
+        <div className="img w-40 h-40 rounded-full overflow-hidden mx-auto">
           <img src={image} alt={name} className="w-full h-full object-cover" />
         </div>
       </div>
@@ -22,15 +24,18 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, role, image, socials }) => {
       </div>
       <ul className="social flex justify-center mt-4">
         {socials.map((social, index) => (
-          <li key={index} className="mx-2">
-            <a href={social.href} className={social.icon + " text-2xl text-teal-500 hover:text-white transition-colors"}>
-              <span className="sr-only">{social.icon}</span>
+          <li key={index} className=" mx-2">
+            <a
+              href={social.href}
+              className={
+                " text-2xl text-teal-500 hover:text-white transition-colors"
+              }
+            >
+              {social.icon}
             </a>
           </li>
         ))}
       </ul>
     </div>
   );
-};
-
-export default TeamCard;
+}

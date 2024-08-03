@@ -1,14 +1,10 @@
-// src/pages/index.tsx
-"use client";
-
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Team from '../components/HomeSections/Team';
-import Contact from '../components/HomeSections/Contact';
-import About from "../components/HomeSections/About";
-import Feature from "../components/HomeSections/FeatureSection";
-import { HeroParallaxDemo } from '../components/HomeSections/HeroParallaxDemo';
+import AboutSection from '@/components/sections/About';
+import ContactUs from '@/components/sections/Contact';
+import Feature from '@/components/sections/Feature/Feature';
+import Footer from '@/components/sections/Footer';
+import HeroParallax from '@/components/sections/Home';
+import Navbar from '@/components/sections/Navbar';
+import Team from '@/components/sections/Team/Team';
 import './globals.css';
 
 const Home: React.FC = () => {
@@ -16,11 +12,11 @@ const Home: React.FC = () => {
     <div>
       <Navbar />
       <main className="flex flex-col items-center justify-between">
-        <HeroParallaxDemo />
-        <About />
-        <Feature/>
+        <HeroParallax />
+        <AboutSection />
+        <Feature />
         <Team />
-        <Contact />
+        <ContactUs />
       </main>
       <Footer />
     </div>
