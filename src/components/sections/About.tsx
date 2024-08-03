@@ -30,7 +30,7 @@ export default function AboutSection() {
             data-aos-offset="350"
             data-aos-duration="4000"
             data-aos-easing="ease-out"
-            className="text-4xl font-bold mb-4"
+            className="text-4xl font-bold mb-4 text-gradient"
           >
             Why choose Lancer.Unit?
           </h1>
@@ -50,7 +50,7 @@ export default function AboutSection() {
               {expertisePoints.map((point, index) => (
                 <li
                   key={index}
-                  className="flex items-start transition-transform transform hover:scale-110 hover:text-blue-700"
+                  className="flex items-start transition-transform transform hover:scale-110 hover-text-gradient duration-300"
                 >
                   <IoCheckmarkDone className="text-blue-500 mr-2 mt-1 text-2xl " />
                   <span>{point}</span>

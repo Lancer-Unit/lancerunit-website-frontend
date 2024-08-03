@@ -10,15 +10,15 @@ const teamMembers = [
     image:
       "https://www.profilebakery.com/wp-content/uploads/2023/04/Profile-Image-AI.jpg",
     socials: [
-      { href: "https://facebook.com", icon: <FaFacebook /> },
-      { href: "https://twitter.com", icon: <FaTwitter /> },
+      { href: "https://facebook.com", icon: FaFacebook },
+      { href: "https://twitter.com", icon: FaTwitter },
       {
         href: "https://www.instagram.com/lancer1_1776/",
-        icon: <FaInstagram />,
+        icon: FaInstagram,
       },
       {
         href: "https://www.linkedin.com/in/rohit-kansal-870527255/",
-        icon: <FaLinkedin />,
+        icon: FaLinkedin,
       },
     ],
   },
@@ -28,13 +28,16 @@ const teamMembers = [
     image:
       "https://cdn.pixabay.com/photo/2024/02/12/17/23/ai-generated-8569065_1280.jpg",
     socials: [
-      { href: "https://facebook.com", icon: <FaFacebook /> },
-      { href: "https://twitter.com", icon: <FaTwitter /> },
+      { href: "https://facebook.com", icon: FaFacebook },
+      { href: "https://twitter.com", icon: FaTwitter },
       {
         href: "https://www.instagram.com/lancer1_1776/",
-        icon: <FaInstagram />,
+        icon: FaInstagram,
       },
-      { href: "https://linkedin.com", icon: <FaLinkedin /> },
+      {
+        href: "https://www.linkedin.com/in/rohit-kansal-870527255/",
+        icon: FaLinkedin,
+      },
     ],
   },
   {
@@ -43,15 +46,15 @@ const teamMembers = [
     image:
       "https://imgcdn.stablediffusionweb.com/2024/5/4/685071ad-bd76-43fd-a055-ba4f3defa04a.jpg",
     socials: [
-      { href: "https://facebook.com", icon: <FaFacebook /> },
-      { href: "https://twitter.com", icon: <FaTwitter /> },
+      { href: "https://facebook.com", icon: FaFacebook },
+      { href: "https://twitter.com", icon: FaTwitter },
       {
         href: "https://www.instagram.com/lancer1_1776/",
-        icon: <FaInstagram />,
+        icon: FaInstagram,
       },
       {
-        href: "https://www.linkedin.com/in/utkarsh-yadav-835859230/",
-        icon: <FaLinkedin />,
+        href: "https://www.linkedin.com/in/rohit-kansal-870527255/",
+        icon: FaLinkedin,
       },
     ],
   },
@@ -61,7 +64,7 @@ export default function Team() {
   return (
     <section className="w-full lg:h-screen flex flex-col justify-center bg-gray-100 py-24" id="team">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-extrabold mb-4">Meet Our Team</h2>
+        <h2 className="text-4xl font-extrabold mb-4 text-gradient">Meet Our Team</h2>
         <p className="text-xl font-medium mb-8">
           The talented individuals behind Lancer Unit.
         </p>

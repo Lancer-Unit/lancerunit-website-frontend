@@ -11,11 +11,35 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .hover-bg-gradient:hover {
-  background: linear-gradient(135deg, #61A4FA, #936CF8);
+  background: linear-gradient(135deg, #517dcb, #7a4abf);
 }
 
-.hover-text-gradient {
-  color: linear-gradient(135deg, #61A4FA, #936CF8);
+.bg-gradient {
+  background: linear-gradient(135deg, #517dcb, #7a4abf);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #517dcb, #7a4abf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-icon {
+  color: #6564C5;
+}
+
+.gradient-icon:hover {
+  transform: scale(1.1);
+  transition-duration: 300; /* Scale the icon to 120% on hover */
+}
+
+.hover-text-gradient:hover {
+  background: linear-gradient(135deg, #517dcb, #7a4abf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }

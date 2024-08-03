@@ -17,7 +17,7 @@ export default function HeroParallax() {
         />
       </div>
       <div className="flex flex-col justify-center items-start md:w-1/2 lg:ml-10 p-6 md:p-12 bg-opacity-70 rounded-lg">
-        <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 text-gradient">
           Elevate Your Business with <br /> Lancer.unit
         </h1>
         <p className="text-lg md:text-2xl leading-relaxed mb-6">
@@ -28,7 +28,7 @@ export default function HeroParallax() {
         </p>
         <a
           href="#contact"
-          className="inline-block px-6 py-3 bg-blue-500 text-white font-semibold text-lg rounded-lg shadow-lg hover:bg-blue-600 transition duration-300"
+          className="inline-block px-6 py-3 text-white font-semibold text-lg rounded-lg shadow-lg bg-gradient tranform hover:scale-110 duration-300"
         >
           Get in Touch
         </a>
