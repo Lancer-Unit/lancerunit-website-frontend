@@ -50,7 +50,7 @@ export default function AboutSection() {
               {expertisePoints.map((point, index) => (
                 <li
                   key={index}
-                  className="flex items-start transition-transform transform hover:scale-110 hover-text-gradient duration-300"
+                  className="flex items-start transition hover:scale-110 hover-text-gradient duration-300"
                 >
                   <IoCheckmarkDone className="text-blue-500 mr-2 mt-1 text-2xl " />
                   <span>{point}</span>

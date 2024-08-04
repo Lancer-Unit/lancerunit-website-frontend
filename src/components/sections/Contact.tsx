@@ -11,7 +11,7 @@ interface FieldConfig {
 }
 
 const fieldsConfig: FieldConfig[] = [
-  { name: "fullName", type: "text", label: "Full Name", required: true },
+  { name: "name", type: "text", label: "Full Name", required: true },
   { name: "email", type: "email", label: "Email", required: true },
   { name: "message", type: "textarea", label: "Message", required: true },
 ];
@@ -38,27 +38,15 @@ export default function ContactUs() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwQ4IOMdtJJzTIGqSZTQXFI3ZCK2f-NDZX9k0v_pzgwDilo7BjSVP9MbdT_Ha1H4a4rOw/exec";
 
-    try {
-      // Simulate form submission logic
-      // Replace this with actual API call or form handling logic
-      // await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      setIsSubmitted(true);
-      setErrorMessage(null);
-
-      // Optionally reset form data here
-      setFormData(
-        fieldsConfig.reduce((acc, field) => {
-          acc[field.name] = "";
-          return acc;
-        }, {} as Record<string, string>)
+    fetch(scriptURL, { method: "POST", body: JSON.stringify(formData) })
+      .then((response) => response.json())
+      .then(() => setIsSubmitted(true))
+      .catch(() =>
+        setErrorMessage("An error occurred. Please try again.")
       );
-
-      // Hide form and show success message
-    } catch (error) {
-      setErrorMessage("An error occurred. Please try again.");
-    }
   };
 
   const handleSendAnother = () => {
@@ -107,7 +95,7 @@ export default function ContactUs() {
                 </div>
                 <button
                   onClick={handleSendAnother}
-                  className="w-full py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-md shadow-md hover:from-blue-600 hover:to-blue-700 transition duration-200"
+                  className="w-full py-2 px-4 bg-gradient text-white rounded-md shadow-md hover:scale-110 transition duration-300"
                 >
                   Send Another Message
                 </button>
