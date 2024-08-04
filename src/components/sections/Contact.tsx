@@ -45,7 +45,13 @@ export default function ContactUs() {
       .then(() => setIsSubmitted(true))
       .catch(() =>
         setErrorMessage("An error occurred. Please try again.")
-      );
+    );
+    setFormData(
+      fieldsConfig.reduce((acc, field) => {
+        acc[field.name] = "";
+        return acc;
+      }, {} as Record<string, string>)
+    );
   };
 
   const handleSendAnother = () => {
