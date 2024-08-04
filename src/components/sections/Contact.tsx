@@ -39,7 +39,7 @@ export default function ContactUs() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwKeHzyF2gADpvsT3nNFwiQn6RSJcMjJ54stxAiQC6K81g1Rvf7CCrF3ujt6bQN9SocaA/exec";
+      "https://script.google.com/macros/s/AKfycby8nd4WQLtZOoJ5C20NMnfTrNDd5MSZA76fO8WNDg4JLjHRso5ArK6HHn40yjrFUybrvQ/exec";
     fetch(scriptURL, { method: "POST", body: JSON.stringify(formData) })
       .then((response) => response.json())
       .then(() => setIsSubmitted(true))
