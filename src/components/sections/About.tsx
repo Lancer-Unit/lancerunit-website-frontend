@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import yourImage from "../../assets/Logo.png";
 import { IoCheckmarkDone } from "react-icons/io5";
+import styles from "@/components/sections/About.module.css";
 
 const expertisePoints = [
   "Our team comprises seasoned professionals with extensive experience in their respective fields.",
@@ -32,7 +35,7 @@ export default function AboutSection() {
             data-aos-easing="ease-out"
             className="text-4xl font-bold mb-4 text-gradient"
           >
-            Why choose Lancer.Unit?
+            Why choose Lancer.unit?
           </h1>
           <div
             data-aos="fade-right"
@@ -40,26 +43,37 @@ export default function AboutSection() {
             data-aos-duration="4000"
             className="h-1 bg-gradient-to-r from-blue-500 to-blue-500 w-16 mb-6"
           ></div>
-          <div
-            data-aos="fade-right"
-            data-aos-offset="400"
-            data-aos-duration="4000"
-            data-aos-easing="ease-out"
-          >
-            <ul className="space-y-4">
-              {expertisePoints.map((point, index) => (
-                <li
-                  key={index}
-                  className="flex items-start transition hover:scale-110 hover-text-gradient duration-300"
-                >
-                  <IoCheckmarkDone className="text-blue-500 mr-2 mt-1 text-2xl " />
-                  <span>{point}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="">
+          <h1 style={{ fontWeight: 'bold' , fontSize: '1.4rem' }}>We will provide you the best work which can think off !!</h1>
+            <br />
+            <p>
+            At Lancer.unit, we're not just tech experts—we're your innovation partners. From crafting engaging websites to providing expert job support, we're here to help you navigate and thrive in the digital world.  </p>
+            <br></br>
+            <br></br>
+            <br />
+
+            <div className={styles.boxContainer}>
+              <div className={styles.box}>
+                <h3>300+</h3>
+                <p>Project Completed</p>
+              </div>
+              <div className={styles.box}>
+                <h3>60+</h3>
+                <p>Satisfied Clients</p>
+              </div>
+              <div className={styles.box}>
+                <h3>10+</h3>
+                <p>Active Developers</p>
+              </div>
+            </div>
+
           </div>
+
         </div>
+
+
       </div>
+
     </section>
   );
 }

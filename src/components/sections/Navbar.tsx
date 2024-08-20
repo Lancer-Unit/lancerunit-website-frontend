@@ -22,12 +22,12 @@ export default function Navbar() {
           <Image src={logo} alt="Lancer.unit" className="w-10 h-10" />
           <span className="text-gradient">Lancer.unit</span>
         </div>
-        <div className="w-full hidden md:flex flex-row justify-center items-center space-x-6">
+        <div className="w-full hidden md:flex flex-row justify-center items-center space-x-6 font-extrabold text-lg">
           <NavLink href="/">Home</NavLink>
-          <NavLink href="#about">Why us</NavLink>
+          <NavLink href="#about">About Us</NavLink>
           <NavLink href="#feature">Services</NavLink>
-          <NavLink href="#team">Team</NavLink>
-          <NavLink href="#contact">Contact</NavLink>
+          <NavLink href="#team">Our Team</NavLink>
+          <NavLink href="#contact">Contact Us</NavLink>
         </div>
       </div>
     </nav>

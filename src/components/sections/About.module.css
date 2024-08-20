@@ -1,0 +1,35 @@
+/* module.css */
+.boxContainer {
+  display: flex;
+  justify-content: space-between; /* Evenly space the boxes */
+  align-items: center; /* Vertically center the content inside each box */
+  gap: 20px; /* Add some space between the boxes */
+  padding: 1px; /* Optional: Add some padding around the container */
+}
+
+.box {
+  flex: 1; /* Makes all boxes take up equal space */
+  text-align: center; /* Center align the text inside each box */
+  padding: 20px;
+  background-color: lightgray; /* Use your custom property for background */
+  color: var(--black); /* Use your custom property for text color */
+  border-radius: 8px; /* Optional: Round the corners of the boxes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  transition: transform 0.3s ease; /* Add a hover effect transition */
+}
+
+.box h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--primary-color); /* Use your primary color for the headings */
+}
+
+.box p {
+  font-size: 1rem;
+  color: var(--light-color); /* Use your custom property for paragraph color */
+}
+
+.box:hover {
+  transform: translateY(-5px); /* Lift the box slightly when hovered */
+}
+
