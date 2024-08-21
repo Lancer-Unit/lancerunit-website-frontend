@@ -1,6 +1,7 @@
 import Image from "next/image";
 import banner from "../../assets/laptop-2665794.jpg";
 
+
 export default function HeroParallax() {
   return (
     <div

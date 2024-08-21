@@ -16,11 +16,11 @@ html {
 }
 
 .bg-gradient {
-  background: linear-gradient(135deg, #517dcb, #7a4abf);
+  background: linear-gradient(135deg, #517dcb, #2a93c8);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #517dcb, #7a4abf);
+  background: linear-gradient(135deg, #41a9f3, #3174ef);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -28,7 +28,7 @@ html {
 }
 
 .gradient-icon {
-  color: #6564C5;
+  color: #6ca4f1;
 }
 
 .gradient-icon:hover {
@@ -37,7 +37,7 @@ html {
 }
 
 .hover-text-gradient:hover {
-  background: linear-gradient(135deg, #517dcb, #7a4abf);
+  background: linear-gradient(135deg, #517dcb, #5e89ee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
