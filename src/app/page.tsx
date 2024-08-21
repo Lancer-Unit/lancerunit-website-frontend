@@ -4,6 +4,7 @@ import ContactUs from '@/components/sections/Contact';
 import Feature from '@/components/sections/Feature/Feature';
 import Footer from '@/components/sections/Footer';
 import HeroParallax from '@/components/sections/Home';
+import Home2 from '@/components/sections/Home2';
 import Navbar from '@/components/sections/Navbar';
 import Team from '@/components/sections/Team/Team';
 import Testimonial from '@/components/sections/Testimonial'
@@ -61,7 +62,7 @@ const Home: React.FC = () => {
     <div>
       <Navbar />
       <main className="flex flex-col items-center justify-between">
-        <HeroParallax />
+        <Home2/>
         <AboutSection />
         <Feature />
         <Team />

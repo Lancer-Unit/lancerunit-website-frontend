@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="container mx-auto flex py-4 px-6">
         <div className="text-2xl font-bold flex items-center space-x-2">
           <Image src={logo} alt="Lancer.unit" className="w-10 h-10" />
-          <span className="text-gradient">Lancer.unit</span>
+          <span className="text-gradient font-extrabold">Lancer.unit</span>
         </div>
         <div className="w-full hidden md:flex flex-row justify-center items-center space-x-6 font-extrabold text-lg">
           <NavLink href="/">Home</NavLink>
