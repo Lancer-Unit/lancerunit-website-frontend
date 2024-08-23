@@ -4,11 +4,28 @@
     padding: 50px;
   }
   
+ 
+
   .section1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(5, 1fr); /* 5 rows */
+  gap: 20px; /* Space between items */
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section1.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.jobData {
+  min-height: 200px; /* Adjust this based on your content */
+}
+
+  
   
   .totalJobs {
     font-size: 22px;
@@ -19,7 +36,7 @@
   .jobData {
     display: flex;
     flex-direction: column;
-    width: 35%; /* Reduced width to 75% */
+    width: 20%; /* Reduced width to 75% */
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
@@ -164,5 +181,102 @@
     .timeBtn Button {
       font-size: 8px;
     }
+  }
+  
+  .section1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    grid-gap: 3%; /* Space between the columns */
+  }
+  
+  .jobData {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure each card takes full width of its grid column */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #fff;
+    text-decoration: none;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .pageButton {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pageButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pageButton:hover:not(:disabled) {
+    background-color: #357abd;
+  }
+  .section1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(5, auto); /* 5 rows */
+    grid-gap: 20px; /* Space between the grid items */
+  }
+  
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .pageButton {
+    padding: 8px 12px;
+    border: none;
+    background-color: black; /* Black for previous and next buttons */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pageNumber {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgb(27, 216, 241); /* Grey for page numbers */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pageNumber:hover:not(:disabled) {
+    background-color: #696969; /* Dark grey on hover */
+  }
+  
+  .currentPage {
+    background-color: #3f6af7; /* Dark grey for the current page */
+  }
+  
+  .pageButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pageButton:hover:not(:disabled) {
+    background-color: #000000; /* Still black on hover */
   }
   
