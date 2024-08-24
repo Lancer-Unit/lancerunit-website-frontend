@@ -22,7 +22,7 @@ export default function Home() {
       <div className="mx-auto">
         <div className="text-center py-8">
           <h1 className="text-4xl font-bold text-gray-800">
-            One Stop Place for all Latest Job Openings in the Job Market
+            One Stop Place for all Latest Openings in the Job Market
           </h1>
         </div>
         <div>

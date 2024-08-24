@@ -1,12 +1,12 @@
 .postingJobs {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-  }
-  
- 
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 55%; /* Set the width to 60% */
+  margin-left: 0; /* Align to the left */
+}
 
-  .section1 {
+.section1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   grid-template-rows: repeat(5, 1fr); /* 5 rows */
@@ -21,262 +21,234 @@
   transform: translateX(0);
 }
 
-.jobData {
-  min-height: 200px; /* Adjust this based on your content */
+.totalJobs {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataMarked {
+  margin-bottom: 10px;
 }
 
-  
-  
-  .totalJobs {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 20px;
+.jobText {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.companyJobs {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.education {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconsExperience {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.education ul {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.locIcon {
+  margin-right: 5px;
+  color: #888;
+}
+
+.textOutline {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.keyskill {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.jobSkills {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 4px 10px;
+}
+
+.timeBtn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.timeBtn Button {
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .section1 {
+    width: 100%;
   }
-  
   .jobData {
-    display: flex;
-    flex-direction: column;
-    width: 20%; /* Reduced width to 75% */
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    background-color: #fff;
-    text-decoration: none;
+    width: 100%;
   }
-  
-  .dataMarked {
-    margin-bottom: 10px;
-  }
-  
-  .jobText {
+  .totalJobs {
     font-size: 18px;
-    font-weight: 600;
   }
-  
-  .companyJobs {
+  .jobText {
     font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
   }
-  
-  .education {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  .companyJobs {
+    font-size: 14px;
   }
-  
-  .iconsExperience {
-    margin-right: 8px;
-    font-size: 20px;
-    color: #333;
-  }
-  
   .education ul {
-    font-size: 14px;
-    margin: 0 10px;
-  }
-  
-  .locIcon {
-    margin-right: 5px;
-    color: #888;
-  }
-  
-  .textOutline {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .keyskill {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-  
-  .jobSkills {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 4px 10px;
-  }
-  
-  .timeBtn {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .timeBtn Button {
     font-size: 12px;
   }
-  
-  .applyNowButton {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #4a90e2;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+  .textOutline {
+    font-size: 12px;
   }
-  
-  .applyNowButton:hover {
-    background-color: #357abd;
+  .keyskill .jobSkills {
+    font-size: 12px;
   }
-  
-  @media (max-width: 900px) {
-    .section1 {
-      width: 100%;
-    }
-    .jobData {
-      width: 100%;
-    }
-    .totalJobs {
-      font-size: 18px;
-    }
-    .jobText {
-      font-size: 16px;
-    }
-    .companyJobs {
-      font-size: 14px;
-    }
-    .education ul {
-      font-size: 12px;
-    }
-    .textOutline {
-      font-size: 12px;
-    }
-    .keyskill .jobSkills {
-      font-size: 12px;
-    }
-    .timeBtn Button {
-      font-size: 10px;
-    }
+  .timeBtn Button {
+    font-size: 10px;
   }
-  
-  @media (max-width: 450px) {
-    .totalJobs {
-      font-size: 16px;
-    }
-    .jobText {
-      font-size: 14px;
-    }
-    .companyJobs {
-      font-size: 12px;
-    }
-    .education ul {
-      font-size: 10px;
-    }
-    .textOutline {
-      font-size: 10px;
-    }
-    .keyskill .jobSkills {
-      font-size: 10px;
-    }
-    .timeBtn Button {
-      font-size: 8px;
-    }
-  }
-  
-  .section1 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
-    grid-gap: 3%; /* Space between the columns */
-  }
-  
-  .jobData {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Ensure each card takes full width of its grid column */
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    background-color: #fff;
-    text-decoration: none;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
-  }
-  
-  .pageButton {
-    padding: 8px 12px;
-    border: none;
-    background-color: #4a90e2;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .pageButton:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-  }
-  
-  .pageButton:hover:not(:disabled) {
-    background-color: #357abd;
-  }
-  .section1 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(5, auto); /* 5 rows */
-    grid-gap: 20px; /* Space between the grid items */
-  }
-  
+}
 
-  .pagination {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
+@media (max-width: 450px) {
+  .totalJobs {
+    font-size: 16px;
   }
-  
-  .pageButton {
-    padding: 8px 12px;
-    border: none;
-    background-color: black; /* Black for previous and next buttons */
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+  .jobText {
+    font-size: 14px;
   }
-  
-  .pageNumber {
-    padding: 8px 12px;
-    border: none;
-    background-color: rgb(27, 216, 241); /* Grey for page numbers */
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+  .companyJobs {
+    font-size: 12px;
   }
-  
-  .pageNumber:hover:not(:disabled) {
-    background-color: #696969; /* Dark grey on hover */
+  .education ul {
+    font-size: 10px;
   }
-  
-  .currentPage {
-    background-color: #3f6af7; /* Dark grey for the current page */
+  .textOutline {
+    font-size: 10px;
   }
-  
-  .pageButton:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+  .keyskill .jobSkills {
+    font-size: 10px;
   }
-  
-  .pageButton:hover:not(:disabled) {
-    background-color: #000000; /* Still black on hover */
+  .timeBtn Button {
+    font-size: 8px;
   }
-  
+}
+
+.jobData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pageButton {
+  padding: 8px 12px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pageButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pageButton:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pageButton {
+  padding: 8px 12px;
+  border: none;
+  background-color: black; /* Black for previous and next buttons */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pageNumber {
+  padding: 8px 12px;
+  border: none;
+  background-color: rgb(27, 216, 241); /* Grey for page numbers */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pageNumber:hover:not(:disabled) {
+  background-color: #696969; /* Dark grey on hover */
+}
+
+.currentPage {
+  background-color: #3f6af7; /* Dark grey for the current page */
+}
+
+.pageButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pageButton:hover:not(:disabled) {
+  background-color: #000000; /* Still black on hover */
+}
+
+
+
+.applyButton {
+  display: block;
+  width: 100%; /* Adjusts the width of the button */
+  text-align: center;
+  margin: 8px auto 0; /* Centers the button horizontally and adds margin on top */
+  padding: 3px;
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.applyButton:hover {
+  background-color: #357abd;
+}
+
+.timeBtn {
+  margin-top: 10px; /* Space above the date posted */
+  font-size: 0.9em;
+  color: #777;
+  display: flex;
+  align-items: center;
+}

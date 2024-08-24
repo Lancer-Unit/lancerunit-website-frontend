@@ -54,71 +54,72 @@ const Jobs: React.FC = () => {
   return (
     <div>
       <div className={styles.postingJobs}>
-  <div className={`${styles.section1} ${isTransitioning ? "" : styles.active}`}>
-    {filledJobs.map((item, index) => (
-      item.id && (
-        <div className={styles.jobData} key={index}>
-          <Link href={`/jobspage/${item.id}`} className={styles.jobDataLink}>
-            <div className={styles.dataMarked}>
-              <h2>{item.title}</h2>
-            </div>
-            <div className={styles.companyJobs}>{item.company}</div>
-            <div className={styles.education}>
-              <IoBagOutline className={styles.iconsExperience} />
-              <ul>{item.experience}</ul>
-              <ul>{item.salary}</ul>
-              <ul style={{ display: "flex", gap: "3px" }}>
-                <CiLocationOn className={styles.locIcon} />
-                {item.location}
-              </ul>
-            </div>
-            <div className={styles.textOutline}>
-              <HiOutlineDocumentText className={styles.locIcon} /> {item.candidate}
-            </div>
-            <div className={styles.keyskill}>
-              {item.keySkills.slice(0, 2).map((elem, index) => (
-                <span key={index} className={styles.jobSkills}>
-                  {elem}
-                </span>
-              ))}
-            </div>
-            <div className={styles.timeBtn}>
-              <Button size="xs">
-                <TfiTimer />
-                {item.posted}
-              </Button>
-            </div>
-          </Link>
+        <div className={`${styles.section1} ${isTransitioning ? "" : styles.active}`}>
+          {filledJobs.map((item, index) => (
+            item.id && (
+              <div className={styles.jobData} key={index}>
+                <Link href={`/jobspage/${item.id}`} className={styles.jobDataLink}>
+                  <div className={styles.dataMarked}>
+                    <h2>{item.title}</h2>
+                  </div>
+                  <div className={styles.companyJobs}>{item.company}</div>
+                  <div className={styles.education}>
+                    <IoBagOutline className={styles.iconsExperience} />
+                    <ul>{item.experience}</ul>
+                    <ul>{item.salary}</ul>
+                    <ul style={{ display: "flex", gap: "3px" }}>
+                      <CiLocationOn className={styles.locIcon} />
+                      {item.location}
+                    </ul>
+                  </div>
+                  <div className={styles.textOutline}>
+                    <HiOutlineDocumentText className={styles.locIcon} /> {item.candidate}
+                  </div>
+                  <div className={styles.keyskill}>
+                    {item.keySkills.slice(0, 2).map((elem, index) => (
+                      <span key={index} className={styles.jobSkills}>
+                        {elem}
+                      </span>
+                    ))}
+                  </div>
+                  <div className={styles.timeBtn}><Button size="xs">
+                  <TfiTimer />
+                  {item.posted}
+                </Button></div>
+                </Link>
+                <Link href={`/jobspage/${item.id}`} className={styles.applyButton}>
+                  Apply Now
+                </Link>
+              </div>
+            )
+          ))}
         </div>
-      )
-    ))}
-  </div>
-  <div className={styles.pagination}>
-    <Button
-      onClick={() => handlePageChange(currentPage - 1)}
-      disabled={currentPage === 1}
-      className={styles.pageButton}
-    >
-      Previous
-    </Button>
-    {Array.from({ length: totalPages }, (_, index) => index + 1).map((number) => (
-      <Button
-        key={number}
-        onClick={() => handlePageChange(number)}
-        className={`${styles.pageNumber} ${currentPage === number ? styles.currentPage : ""}`}
-      >
-        {number}
-      </Button>
-    ))}
-    <Button
-      onClick={() => handlePageChange(currentPage + 1)}
-      disabled={currentPage === totalPages}
-      className={styles.pageButton}
-    >
-      Next
-    </Button>
-  </div>
-</div>
+        <div className={styles.pagination}>
+          <Button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+            className={styles.pageButton}
+          >
+            Previous
+          </Button>
+          {Array.from({ length: totalPages }, (_, index) => index + 1).map((number) => (
+            <Button
+              key={number}
+              onClick={() => handlePageChange(number)}
+              className={`${styles.pageNumber} ${currentPage === number ? styles.currentPage : ""}`}
+            >
+              {number}
+            </Button>
+          ))}
+          <Button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className={styles.pageButton}
+          >
+            Next
+          </Button>
+        </div>
+      </div>
 
     </div>
   );
