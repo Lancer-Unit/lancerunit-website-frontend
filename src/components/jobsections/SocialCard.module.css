@@ -1,0 +1,57 @@
+.postingCards {
+  padding: 40px;
+  margin-top: 8px;
+}
+
+.cardContainer {
+  width: 75%; /* Tripled from 30% to 90% */
+  
+  padding: 30px; 
+  border-radius: 24px; /* Tripled from 8px to 24px */
+  text-align: center;
+  margin-left: -85px !important;
+  margin-top: 10px !important;
+
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center; /* Center align the links */
+  gap: 20px; /* Add space between the circles */
+  margin-top: -55px;
+}
+
+.socialLinks a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden; /* Ensures the image fits within the circle */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.socialLinks a:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.socialLinks img {
+  width: 100%; /* Make the image fill the circular container */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+  border-radius: 50%; /* Makes the image itself circular */
+}
+
+.textContent {
+  margin-bottom: 20px;
+}
+
+.textContent p {
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #333;
+}

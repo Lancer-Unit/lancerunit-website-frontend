@@ -1,0 +1,46 @@
+.cardContainer {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px !important;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: -15px !important; /* Reduced space from the SocialCard */
+    margin-left: -120px !important;
+    margin-right: 60px !important; /* Reduced space from the right */
+}
+
+/* Ensure the parent container is not adding unexpected padding or margins */
+.parentContainer {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+  .textContent {
+    margin-bottom: 20px;
+  }
+  
+  .textContent p {
+    margin: 5px 0;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #333;
+  }
+  
+  .companiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  
+  .companyLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .companyLogo img {
+    max-width: 100px;
+    max-height: 60px;
+    object-fit: contain;
+  }
+  

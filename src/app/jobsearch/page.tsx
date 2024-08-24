@@ -1,6 +1,8 @@
 "use client"
 import SearchBar from "@/components/jobsections/SearchFilters";
 import JobsCollection from "@/components/jobsections/Jobs";
+import SocialCard from '@/components/jobsections/SocialCard';
+import CompaniesCard from '@/components/jobsections/CompaniesCard'; // Import the new component
 import Navbar from '@/components/sections/Navbar';
 import { useState } from "react";
 
@@ -28,8 +30,14 @@ export default function Home() {
         <div>
           <SearchBar onSearch={onSearch} />
         </div>
-        <div>
-          <JobsCollection />
+        <div className="flex">
+          <div className="w-2/3">
+            <JobsCollection />
+          </div>
+          <div className="w-1/3 flex flex-col gap-4">
+          <SocialCard />
+          <CompaniesCard />
+          </div>
         </div>
         {/* <Footer /> */}
       </div>

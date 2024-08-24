@@ -25,7 +25,7 @@ const Jobs: React.FC = () => {
   const Data: Job[] = mockJobsData;
   const [currentPage, setCurrentPage] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const jobsPerPage = 10;
+  const jobsPerPage = 8;
 
   // Calculate the index for slicing the data
   const indexOfLastJob = currentPage * jobsPerPage;
