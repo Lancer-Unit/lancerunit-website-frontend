@@ -24,10 +24,12 @@ export default function Navbar() {
         </div>
         <div className="w-full hidden md:flex flex-row justify-center items-center space-x-6 font-extrabold text-lg">
           <NavLink href="/">Home</NavLink>
-          <NavLink href="#about">About Us</NavLink>
-          <NavLink href="#feature">Services</NavLink>
-          <NavLink href="#team">Our Team</NavLink>
-          <NavLink href="#contact">Contact Us</NavLink>
+          <NavLink href="/#about">Know Us</NavLink>
+          <NavLink href="/jobsearch">Jobs For You </NavLink>
+          <NavLink href="/#feature">Services</NavLink>
+          <NavLink href="/#team">Team</NavLink>
+          <NavLink href="/#contact">Contact</NavLink>
+          
         </div>
       </div>
     </nav>

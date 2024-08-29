@@ -6,6 +6,7 @@ import CompaniesCard from '@/components/jobsections/CompaniesCard'; // Import th
 import Testament from "@/components/jobsections/Testament"
 import NewsCard from "@/components/jobsections/News"
 import Navbar from '@/components/sections/Navbar';
+import Footer from '@/components/sections/Footer';
 import { useState } from "react";
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
           <NewsCard/>
           </div>
         </div>
-        {/* <Footer /> */}
+        <Footer/>
       </div>
     </main>
   );
