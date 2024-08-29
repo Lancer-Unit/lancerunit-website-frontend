@@ -3,6 +3,8 @@ import SearchBar from "@/components/jobsections/SearchFilters";
 import JobsCollection from "@/components/jobsections/Jobs";
 import SocialCard from '@/components/jobsections/SocialCard';
 import CompaniesCard from '@/components/jobsections/CompaniesCard'; // Import the new component
+import Testament from "@/components/jobsections/Testament"
+import NewsCard from "@/components/jobsections/News"
 import Navbar from '@/components/sections/Navbar';
 import { useState } from "react";
 
@@ -37,6 +39,9 @@ export default function Home() {
           <div className="w-1/3 flex flex-col gap-4">
           <SocialCard />
           <CompaniesCard />
+          <br />
+          <br />
+          <NewsCard/>
           </div>
         </div>
         {/* <Footer /> */}

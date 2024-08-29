@@ -1,11 +1,11 @@
 .cardContainer {
-    width: 100%;
+    width: 110%;
     background-color: #ffffff;
     padding: 30px !important;
     border-radius: 16px;
     text-align: center;
     margin-top: -15px !important; /* Reduced space from the SocialCard */
-    margin-left: -120px !important;
+    margin-left: -160px !important;
     margin-right: 60px !important; /* Reduced space from the right */
 }
 

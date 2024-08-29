@@ -1,0 +1,53 @@
+.cardContainer {
+    width: 110%; /* Increase the width to 120% */
+    height: 750px; /* Increase the height as needed */
+    background-color: #cbc6c6c2;
+    padding: 30px !important;
+    border-radius: 16px;
+    text-align: center;
+    background-color: rgb(220, 220, 216);
+    margin-top: -15px !important; /* Reduced space from the SocialCard */
+    margin-left: -110px !important; /* Adjusted margin for proper alignment */
+    margin-right: 60px !important; /* Reduced space from the right */
+  }
+
+  .newsContainer {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .newsList {
+    list-style: none;
+    padding: 0;
+    margin: 8px;
+  }
+  
+  .newsItem {
+    margin-bottom: 10px;
+  }
+  
+  .newsLink {
+    text-decoration: none;
+    color: #0073e6;
+    transition: color 0.3s ease;
+    display: block;
+  }
+  
+  .newsLink:hover {
+    color: #131515;
+  }
+  
